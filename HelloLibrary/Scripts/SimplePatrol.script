@@ -1,0 +1,53 @@
+-- Use the predefined movement module to aid us
+
+-- Define properties visable to the editor
+go.property("move_speed", 250)
+go.property("patrol_distance", 250)
+
+
+function init(self)
+	self.moving_right = true
+	self.start_x = go.get_world_position().x
+end
+
+
+function update(self, dt)
+
+	local dx = go.get_world_position().x - self.start_x
+	
+	if self.moving_right and dx > self.patrol_distance then
+		-- Rört sig tillräckligt åt höger.
+		self.moving_right = false
+	elseif not self.moving_right and dx < -self.patrol_distance then
+		-- Rört sig tillräckligt åt vänster. Notera minustecknet framför patrol_distance
+		self.moving_right = true
+	end
+	
+	-- Förflytta sig
+	if self.moving_right then
+		move_right(self, go)
+	else
+		move_left(self, go)
+	end
+end
+
+
+function move_left(self, go)
+	-- move position
+	local pos = go.get_position()
+	pos.x = pos.x - self.move_speed * deltaTime
+	go.set_position(pos)
+	
+	--Få spelaren att vända sig åt vänster
+	 sprite.set_hflip("#sprite", true)
+end
+
+function move_right(self, go)
+	-- move position
+	local pos = go.get_position()
+	pos.x = pos.x + self.move_speed * deltaTime
+	go.set_position(pos)
+	
+	--Få spelaren att vända sig åt höger
+	 sprite.set_hflip("#sprite", false)
+end

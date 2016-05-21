@@ -1,0 +1,6 @@
+images {
+  image: "/HelloLibrary/GameOverScreen/Grafik/Black.png"
+}
+images {
+  image: "/HelloLibrary/GameOverScreen/Grafik/Restart.png"
+}

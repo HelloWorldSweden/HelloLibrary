@@ -1,0 +1,25 @@
+require "HelloLibrary.Modules.HelloCollision"
+
+
+function init(self)
+	init_collision(self)
+end
+
+
+function update(self, dt)
+	update_collision(self)
+end
+
+
+function on_message(self, message_id, message, sender)
+    if message_id == hash("contact_point_response") then
+        -- check if we received a contact point message. One message for each contact point
+        if message.group == hash("platform") then
+            handle_platform_contact(self, message)
+        end
+    end
+    
+    if message_id == hash("movingUpdate") then
+    	self.isMoving = message.moving
+    end
+end

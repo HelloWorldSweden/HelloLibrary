@@ -1,0 +1,27 @@
+
+-- Definera egenskaper synliga via "properties" fönstret
+go.property("push_force", 1400)
+
+function on_message(self, message_id, message, sender)
+
+	-- Kollisions meddelande
+    if message_id == hash("collision_response") then
+    	-- Vilket inkluderar vår hero, dvs kolliderade med spelaren
+    	if message.group == hash("hero") then
+    		-- Räkna ut en vektor från detta objekt till spelaren
+    		local delta = message.other_position - go.get_world_position()
+    		delta.z = 0
+    		delta.y = math.min(delta.y, 0) -- bara puttas nedåt
+    		if delta.x == 0 and delta.y == 0 then
+    			-- Är spelaren precis ovanför så puttas man åt höger
+    			delta.x = 1
+    		end
+    		
+    		-- Putta bort spelaren via SimpleGravity skriptet
+    		msg.post("hero#script_gravity", "set_momentum", {force = vmath.normalize(delta) * self.push_force})
+    		
+    		-- Säg åt spelaren att tappa liv
+    		msg.post("hud#gui", "decrease_heart")
+    	end
+    end
+end

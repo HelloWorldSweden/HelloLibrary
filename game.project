@@ -1,7 +1,7 @@
 [project]
-title = My project
-version = 0.1
-dependencies = http://www.defold.com/p/6507/13619/archive
+title = Hello Library
+version = 2.0
+dependencies = 
 
 [bootstrap]
 main_collection = /main/main.collectionc

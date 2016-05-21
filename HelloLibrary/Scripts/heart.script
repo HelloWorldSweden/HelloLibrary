@@ -1,0 +1,11 @@
+function init(self)
+	self.collected = false
+end
+
+function on_message(self, message_id, message, sender)
+	if self.collected == false and message_id == hash("collision_response") then
+		msg.post("hud#gui", "increase_heart")
+	end
+end
+	
+   

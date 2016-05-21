@@ -1,0 +1,23 @@
+require "HelloLibrary.Modules.Apple_GUI_Module"
+-- 	De två funktioner som vi har att jobba med är:
+--	showGameOver()
+--	hideGameOver()
+
+--	se till att lägga in dem på rätt ställen
+
+
+function init(self)
+	--  Koden som vi skriver här kommer köras vid starten av spelet
+
+
+end
+
+
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("GameOver") then
+	--  Koden som vi skriver här kommer köras när spelaren har tappat alla liv
+		
+		
+	end
+end
