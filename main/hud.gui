@@ -1,4 +1,4 @@
-script: "/HelloLibrary/Scripts/hud.gui_script"
+script: "/oldHelloLibrary/Scripts/hud.gui_script"
 fonts {
   name: "HelloFont"
   font: "/main/HelloFont.font"
@@ -8,22 +8,15 @@ textures {
   texture: "/pickup/pickup.atlas"
 }
 background_color {
-  x: 0.0
-  y: 0.0
-  z: 0.0
   w: 1.0
 }
 nodes {
   position {
     x: 201.02533
     y: 664.61475
-    z: 0.0
     w: 1.0
   }
   rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
     w: 1.0
   }
   scale {
@@ -35,7 +28,6 @@ nodes {
   size {
     x: 200.0
     y: 100.0
-    z: 0.0
     w: 1.0
   }
   color {
@@ -45,13 +37,9 @@ nodes {
     w: 1.0
   }
   type: TYPE_TEXT
-  blend_mode: BLEND_MODE_ALPHA
   text: "Mynt:"
   font: "HelloFont"
   id: "coin_text"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_CENTER
   outline {
     x: 1.0
     y: 1.0
@@ -64,32 +52,15 @@ nodes {
     z: 1.0
     w: 1.0
   }
-  adjust_mode: ADJUST_MODE_FIT
-  line_break: false
-  layer: ""
   inherit_alpha: true
-  clipping_mode: CLIPPING_MODE_NONE
-  clipping_visible: true
-  clipping_inverted: false
-  alpha: 1.0
-  outline_alpha: 1.0
-  shadow_alpha: 1.0
-  template_node_child: false
-  text_leading: 1.0
-  text_tracking: 0.0
-  size_mode: SIZE_MODE_MANUAL
 }
 nodes {
   position {
     x: 293.53055
     y: 660.96606
-    z: 0.0
     w: 1.0
   }
   rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
     w: 1.0
   }
   scale {
@@ -101,7 +72,6 @@ nodes {
   size {
     x: 200.0
     y: 100.0
-    z: 0.0
     w: 1.0
   }
   color {
@@ -111,13 +81,9 @@ nodes {
     w: 1.0
   }
   type: TYPE_TEXT
-  blend_mode: BLEND_MODE_ALPHA
   text: "0"
   font: "HelloFont"
   id: "coins"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_CENTER
   outline {
     x: 1.0
     y: 1.0
@@ -130,32 +96,15 @@ nodes {
     z: 1.0
     w: 1.0
   }
-  adjust_mode: ADJUST_MODE_FIT
-  line_break: false
-  layer: ""
   inherit_alpha: true
-  clipping_mode: CLIPPING_MODE_NONE
-  clipping_visible: true
-  clipping_inverted: false
-  alpha: 1.0
-  outline_alpha: 1.0
-  shadow_alpha: 1.0
-  template_node_child: false
-  text_leading: 1.0
-  text_tracking: 0.0
-  size_mode: SIZE_MODE_MANUAL
 }
 nodes {
   position {
     x: 950.20734
     y: 656.42035
-    z: 0.0
     w: 1.0
   }
   rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
     w: 1.0
   }
   scale {
@@ -167,7 +116,6 @@ nodes {
   size {
     x: 186.0
     y: 190.0
-    z: 0.0
     w: 1.0
   }
   color {
@@ -176,40 +124,20 @@ nodes {
     z: 1.0
     w: 1.0
   }
-  type: TYPE_BOX
-  blend_mode: BLEND_MODE_ALPHA
   texture: "pickup/heart"
   id: "life3"
   xanchor: XANCHOR_RIGHT
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_CENTER
-  adjust_mode: ADJUST_MODE_FIT
-  layer: ""
   inherit_alpha: true
-  slice9 {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0
-  }
-  clipping_mode: CLIPPING_MODE_NONE
-  clipping_visible: true
-  clipping_inverted: false
   alpha: 0.0
-  template_node_child: false
   size_mode: SIZE_MODE_AUTO
 }
 nodes {
   position {
     x: 1021.4401
     y: 656.42035
-    z: 0.0
     w: 1.0
   }
   rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
     w: 1.0
   }
   scale {
@@ -221,7 +149,6 @@ nodes {
   size {
     x: 186.0
     y: 190.0
-    z: 0.0
     w: 1.0
   }
   color {
@@ -230,40 +157,18 @@ nodes {
     z: 1.0
     w: 1.0
   }
-  type: TYPE_BOX
-  blend_mode: BLEND_MODE_ALPHA
   texture: "pickup/heart"
   id: "life2"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_CENTER
-  adjust_mode: ADJUST_MODE_FIT
-  layer: ""
   inherit_alpha: true
-  slice9 {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0
-  }
-  clipping_mode: CLIPPING_MODE_NONE
-  clipping_visible: true
-  clipping_inverted: false
-  alpha: 1.0
-  template_node_child: false
   size_mode: SIZE_MODE_AUTO
 }
 nodes {
   position {
     x: 1088.0773
     y: 656.42035
-    z: 0.0
     w: 1.0
   }
   rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
     w: 1.0
   }
   scale {
@@ -275,7 +180,6 @@ nodes {
   size {
     x: 186.0
     y: 190.0
-    z: 0.0
     w: 1.0
   }
   color {
@@ -284,40 +188,18 @@ nodes {
     z: 1.0
     w: 1.0
   }
-  type: TYPE_BOX
-  blend_mode: BLEND_MODE_ALPHA
   texture: "pickup/heart"
   id: "life1"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_CENTER
-  adjust_mode: ADJUST_MODE_FIT
-  layer: ""
   inherit_alpha: true
-  slice9 {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0
-  }
-  clipping_mode: CLIPPING_MODE_NONE
-  clipping_visible: true
-  clipping_inverted: false
-  alpha: 1.0
-  template_node_child: false
   size_mode: SIZE_MODE_AUTO
 }
 nodes {
   position {
     x: 1151.8243
     y: 659.3341
-    z: 0.0
     w: 1.0
   }
   rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
     w: 1.0
   }
   scale {
@@ -329,7 +211,6 @@ nodes {
   size {
     x: 200.0
     y: 100.0
-    z: 0.0
     w: 1.0
   }
   color {
@@ -339,13 +220,9 @@ nodes {
     w: 1.0
   }
   type: TYPE_TEXT
-  blend_mode: BLEND_MODE_ALPHA
   text: "2"
   font: "HelloFont"
   id: "lives"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_CENTER
   outline {
     x: 1.0
     y: 1.0
@@ -358,21 +235,7 @@ nodes {
     z: 1.0
     w: 1.0
   }
-  adjust_mode: ADJUST_MODE_FIT
   line_break: true
-  layer: ""
   inherit_alpha: true
-  clipping_mode: CLIPPING_MODE_NONE
-  clipping_visible: true
-  clipping_inverted: false
-  alpha: 1.0
-  outline_alpha: 1.0
-  shadow_alpha: 1.0
-  template_node_child: false
-  text_leading: 1.0
-  text_tracking: 0.0
-  size_mode: SIZE_MODE_MANUAL
 }
-material: "/builtins/materials/gui.material"
 adjust_reference: ADJUST_REFERENCE_PARENT
-max_nodes: 512

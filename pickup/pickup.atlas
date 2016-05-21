@@ -1,9 +1,6 @@
 images {
-  image: "/HelloLibrary/Grafik/Pickups/coin.png"
+  image: "/oldHelloLibrary/Grafik/Pickups/coin.png"
 }
 images {
-  image: "/HelloLibrary/Grafik/Pickups/heart.png"
+  image: "/oldHelloLibrary/Grafik/Pickups/heart.png"
 }
-margin: 0
-extrude_borders: 0
-inner_padding: 0
