@@ -1,0 +1,9 @@
+images {
+  image: "/deathScreen/Black.png"
+}
+images {
+  image: "/deathScreen/Restart.png"
+}
+margin: 0
+extrude_borders: 0
+inner_padding: 0

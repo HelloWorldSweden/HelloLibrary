@@ -1,0 +1,9 @@
+images {
+  image: "/HelloLibrary/Grafik/Enemies/spikes.png"
+}
+images {
+  image: "/HelloLibrary/Grafik/Enemies/ghost.png"
+}
+margin: 0
+extrude_borders: 0
+inner_padding: 0

@@ -1,0 +1,20 @@
+key_trigger {
+  input: KEY_LEFT
+  action: "hero_left"
+}
+key_trigger {
+  input: KEY_RIGHT
+  action: "hero_right"
+}
+key_trigger {
+  input: KEY_UP
+  action: "hero_jump"
+}
+key_trigger {
+  input: KEY_K
+  action: "respawn"
+}
+mouse_trigger {
+  input: MOUSE_BUTTON_1
+  action: "mouse_press"
+}

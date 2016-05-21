@@ -1,0 +1,31 @@
+require "HelloLibrary.Modules.HelloMovement"
+
+-- Definera egenskaper synliga via "properties" fönstret
+go.property("move_speed", 250) -- horisontell rörelse i enheter/s
+go.property("jump_force", 500) -- enheter/s, men notera att gravitationen kommer appliseras
+
+function init(self)
+	-- Registrera att detta skript önskar läsa input
+	msg.post(".", "acquire_input_focus")
+end
+
+function on_input(self, action_id, action)
+	-- Om spelaren trycker på Left
+	if action_id == hash("hero_left") then
+		move_left(self, go)
+		
+		playMoveAnimation(self)
+	end
+		
+	-- Om spelaren trycker på Right
+	if action_id == hash("hero_right") then
+		move_right(self, go)
+		
+		playMoveAnimation(self)
+	end
+	
+	-- Om spelaren trycker på Jump
+	if action_id == hash("hero_jump") then
+		jump(self)
+	end
+end
