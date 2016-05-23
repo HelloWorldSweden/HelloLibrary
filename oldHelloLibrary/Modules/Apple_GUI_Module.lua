@@ -1,4 +1,4 @@
-require "HelloLibrary.Modules.RestartGame"
+require "oldHelloLibrary.Modules.RestartGame"
 
 function on_input(self, action_id, action)
 	if action_id == hash("mouse_press") and action.pressed then

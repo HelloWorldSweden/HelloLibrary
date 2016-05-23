@@ -1,4 +1,4 @@
-require "HelloLibrary.Modules.HelloCollision"
+require "oldHelloLibrary.Modules.HelloCollision"
 
 
 function init(self)

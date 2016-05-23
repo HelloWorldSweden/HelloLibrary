@@ -1,4 +1,4 @@
-require "HelloLibrary.Modules.HelloMovement"
+require "oldHelloLibrary.Modules.HelloMovement"
 
 -- Definera egenskaper synliga via "properties" fönstret
 go.property("move_speed", 250) -- horisontell rörelse i enheter/s

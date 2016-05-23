@@ -1,4 +1,4 @@
-require "HelloLibrary.Modules.HelloCollision"
+require "oldHelloLibrary.Modules.HelloCollision"
 
 -- Definera egenskaper synliga via "properties" fönstret
 go.property("gravity", 1000) -- Hastighet i enheter/s/s

@@ -1,5 +1,5 @@
 -- Use the predefined movement module to aid us
-require "HelloLibrary.Modules.HelloMovement"
+require "oldHelloLibrary.Modules.HelloMovement"
 
 -- Define properties visable to the editor
 go.property("move_speed", 250)

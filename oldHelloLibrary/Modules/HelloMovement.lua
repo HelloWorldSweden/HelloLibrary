@@ -1,4 +1,4 @@
-require "HelloLibrary.Modules.AnimationController"
+require "oldHelloLibrary.Modules.AnimationController"
 
 local deltaTime = 0;
 

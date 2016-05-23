@@ -1,4 +1,4 @@
-require "HelloLibrary.Modules.RestartGame"
+require "oldHelloLibrary.Modules.RestartGame"
 
 function init(self)
     -- Bestäm standardvärden här

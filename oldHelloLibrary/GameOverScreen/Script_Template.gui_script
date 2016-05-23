@@ -1,4 +1,4 @@
-require "HelloLibrary.Modules.Apple_GUI_Module"
+require "oldHelloLibrary.Modules.Apple_GUI_Module"
 -- 	De två funktioner som vi har att jobba med är:
 --	showGameOver()
 --	hideGameOver()
