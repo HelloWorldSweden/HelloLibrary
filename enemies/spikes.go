@@ -1,6 +1,6 @@
 components {
   id: "script"
-  component: "/oldHelloLibrary/Scripts/DamageDealer.script"
+  component: "/HelloLibrary/Scripts/Sidescroller/DamageDealer.script"
   position {
     x: 0.0
     y: 0.0

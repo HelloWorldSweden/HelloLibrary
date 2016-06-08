@@ -5,6 +5,15 @@
 	# Kräver:
 		-	self.gravity: (number) hastighetsförändring i y-led per sekund. Sätt till 0 för ingen gravitation.
 	
+	# Variabler att använda:
+		-	self.isMoving: (bool, readonly) =true om karaktären förflyttar sig via Movement modulen
+		-	self.grounded: (bool, readonly) =true om karaktären står på en "giltig" platform.
+		-	self.momentum: (vector3) hastighet, ändra på den här när du vill flytta karaktären
+		-	self.terminal: (number, def:2000) med den här variabeln kan du ändra max hastigheten per step
+		-	self.slope_limit: (number, def:60) vinkeln som bestämmer ifall en platform är "giltig"
+		-	self.horizontal_drag: (number, def:7500) Horisontella hastigheten sänks med /drag/ enheter/s, mot 0
+		-	self.vertical_drag: (number, def:0) Vertikala hastigheten sänks med /drag/ enheter/s, mot 0
+	
 	# Funktioner att använda:
 		-	init_physics(self):
 			+	self: (userdata) referens till komponenten/scriptet som kallar funktionen. 
@@ -33,6 +42,12 @@
 				function on_message(self, message_id, message, sender)
 					handle_physics_messages(self, message_id, message, sender)
 				end
+			
+	# Meddelanden att använda:
+		-	Ändra momentum:
+			+	message_id == hash("set_momentum")
+			+	message:
+				-	force: (vector3) ny momentum
 --]]--
 
 require "HelloLibrary.Modules.Math"
@@ -101,10 +116,13 @@ function init_physics(self)
 	self.isMoving = false
 	self.step_velocity = vmath.vector3() -- Hastighet per step, ändra inte
 	
-	self.momentum = vmath.vector3() -- Publik hastighet, ändra på den här när du vill flytta karaktären
-	self.terminal_y = -2000 -- Max hastighet på y axeln
-	self.slope_limit = 60 -- Maximala vinkeln vi kan gå upp för
-	self.horizontal_drag = 7500 -- Horisontella hastigheten sänks med /drag/ enheter/s, mot 0
+	self.momentum = self.momentum or vmath.vector3() -- Publik hastighet, ändra på den här när du vill flytta karaktären
+	self.terminal = self.terminal or 500000 -- Max hastighet på hastigheten/s
+	self.slope_limit = self.slope_limit or 60 -- Maximala vinkeln vi kan gå upp för
+	self.horizontal_drag = self.horizontal_drag or 7500 -- Horisontella hastigheten sänks med /drag/ enheter/s, mot 0
+	self.vertical_drag = self.vertical_drag or 0
+	
+	self.last_dt = 0
 	
 	-- Nuddar spelaren marken just nu?
 	-- Användbart att veta när man vill hoppa
@@ -113,6 +131,7 @@ end
 		
 -- Update
 function update_physics(self, dt)
+	self.last_dt = dt
 
 	--!! KOLLISION !!--
 	
@@ -144,12 +163,13 @@ function update_physics(self, dt)
 	if self.grounded == false then
 		-- Uppdatera nuvarande hastighet
 		self.momentum.y = self.momentum.y - self.gravity * dt
-		-- Lås hastigheten till vårt max värde
-		self.momentum.y = math.max(self.momentum.y, self.terminal_y)
 	end
 	
 	-- Vi vill inte flytta karaktären på Z axeln
 	self.momentum.z = 0
+	
+	-- Lås hastigheten till vårt max värde
+	self.momentum = vmath.clampMagnitude(self.momentum, self.terminal * dt)
 	
 	-- Uppdatera positionen från vår momentum
 	local pos = go.get_position()
@@ -159,6 +179,7 @@ function update_physics(self, dt)
 	-- Horisontell hastighetsminskning
 	-- Gör detta efter positionsändrningen, så det appliseras inför nästa uppdatering
 	self.momentum.x = math.moveTowards(self.momentum.x, 0, self.horizontal_drag * dt)
+	self.momentum.y = math.moveTowards(self.momentum.y, 0, self.vertical_drag * dt)
 	
 	-- Återställ kollision
 	self.grounded = false
@@ -167,7 +188,6 @@ end
 
 function handle_physics_messages(self, message_id, message, sender)
 	-- Kollisions meddelande
-	
 	if message_id == hash("contact_point_response") then
         -- Undersök meddelandet
         if message.group == hash("platform") then

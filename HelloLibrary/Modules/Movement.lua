@@ -5,8 +5,8 @@
 	# Kräver:
 		-	Modulen "HelloLibrary.Modules.Physics"
 		-	Sprite komponent med ID "sprite"
-		-	self.jump_force: (number) hopp kraften
-		-	self.move_speed: (number) hastigheten karaktären rör sig, i enheter/s
+		-	self.jump_force: (number) hopp kraften. [Endast krav om du kommer använda "jump" funktionen]
+		-	self.move_speed: (number) hastigheten karaktären rör sig, i enheter/s. [Endast krav om du kommer använda någon av  "move" funktionerna]
 	
 	# Funktioner att använda:
 		-	jump(self):
@@ -40,8 +40,13 @@
 				end
 --]]--
 
+require "HelloLibrary.Modules.Math"
+require "HelloLibrary.Modules.Health"
+
 function jump(self)
-	if self.grounded then
+	-- Måste stå på något för att kunna hoppa
+	-- Ska inte kunna hoppa i odödlighetsstadiet
+	if self.grounded and invis_normalized(self) > .5 then
     	-- Sätt vår momentum till hopp kraften
     	self.momentum.y = self.jump_force
     	self.grounded = false
@@ -49,17 +54,25 @@ function jump(self)
 end
 
 function move_right(self)
-	self.momentum.x = self.move_speed
-	self.isMoving = true
-	
-	-- Få spelaren att vända sig åt höger
-	sprite.set_hflip("#sprite", false)
+	-- Ska inte kunna förflytta i odödlighetsstadiet
+	local mult = invis_normalized(self)
+	if mult > .4 then
+		self.momentum.x = self.move_speed * mult
+		self.isMoving = true
+		
+		-- Få spelaren att vända sig åt höger
+		sprite.set_hflip("#sprite", false)
+	end
 end
 
 function move_left(self)
-	self.momentum.x = -self.move_speed
-	self.isMoving = true
-	
-	-- Få spelaren att vända sig åt vänster
-	sprite.set_hflip("#sprite", true)
+	-- Ska inte kunna förflytta i odödlighetsstadiet
+	local mult = invis_normalized(self)
+	if mult > .4 then
+		self.momentum.x = -self.move_speed * mult
+		self.isMoving = true
+		
+		-- Få spelaren att vända sig åt vänster
+		sprite.set_hflip("#sprite", true)
+	end
 end

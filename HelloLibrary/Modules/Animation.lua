@@ -4,8 +4,13 @@
 	===============
 	# Kräver:
 		-	Sprite komponent med ID "sprite"
+		-	Animation på spriten med ID "walk"
+		-	Animation på spriten med ID "stand"
 		-	Modulen "HelloLibrary.Modules.Physics"
 		-	Modulen "HelloLibrary.Modules.Movement"
+	
+	# Variabler att använda:
+		-	self.walkAnimActive: (bool, readonly) =true om "walk" animationen spelas upp av
 	
 	# Funktioner att använda:
 		-	update_animations(self):
@@ -13,7 +18,7 @@
 			=	returnerar: (nil)
 			ex:
 				function update(self, dt)
-					update_animations(self) <-- update_animation bör köras före update_physics!
+					update_animations(self) <-- Notera: update_animation bör köras före update_physics!
 					update_physics(self, dt)
 				end
 --]]--

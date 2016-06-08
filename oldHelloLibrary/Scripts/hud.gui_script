@@ -29,7 +29,7 @@ function on_message(self, message_id, message, sender)
 	-- ta bort liv om spelaren inte är odödlig
 	if message_id == hash("decrease_heart") and not isInvis(self) then
 		self.HP = self.HP - 1
-		checkHP(self)		
+		checkHP(self)
 
 		local life =  getLifeNode(self.HP + 1)
 		gui.set_color(life, vmath.vector4(1, 1, 1, 0))

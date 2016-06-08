@@ -1,18 +1,20 @@
-require "HelloLibrary.Modules.Physics"
-require "HelloLibrary.Modules.Movement"
-require "HelloLibrary.Modules.Utility"
-require "HelloLibrary.Modules.Animation"
+require "HelloLibrary.Modules.ALL"
 
--- ALREADY COMPLETED SCRIPT EXAMPLE
+--======================================--
+--(( ALREADY COMPLETED SCRIPT EXAMPLE ))--
+--======================================--
 
 -- Definera egenskaper synliga via "properties" fönstret
 go.property("move_speed", 500) -- horisontell rörelse i enheter/s
 go.property("jump_force", 800) -- enheter/s, men notera att gravitationen kommer appliseras
 go.property("gravity", 1000) -- Hastighet i enheter/s/s
+go.property("health", 3) -- Liv
 
 function init(self)
-	-- Lägg grunderna för kollisions modulen
+	-- Lägg grunderna för fysik modulen
 	init_physics(self)
+	-- Lägg grunderna för livshantering
+	init_health(self)
 	-- Registrera att detta skript önskar läsa input
 	msg.post(".", "acquire_input_focus")
 end
@@ -27,6 +29,8 @@ end
 function on_message(self, message_id, message, sender)
 	-- Hantera kollision meddelanden
 	handle_physics_messages(self, message_id, message, sender)
+	-- Hantera liv-relaterade meddelanden
+	handle_health_messages(self, message_id, message, sender)
 end
 
 function on_input(self, action_id, action)

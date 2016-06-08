@@ -1,0 +1,53 @@
+require "HelloLibrary.Modules.ALL"
+
+--======================================--
+--(( ALREADY COMPLETED SCRIPT EXAMPLE ))--
+--======================================--
+
+-- Definera egenskaper synliga via "properties" fönstret
+go.property("move_speed", 500) -- horisontell rörelse i enheter/s
+go.property("gravity", 1000) -- Hastighet i enheter/s/s
+go.property("patrol_distance", 250) -- Patruleringsradien från startpositionen i enheter.
+
+function patrol(self)
+	local dx = go.get_world_position().x - self.start_x
+	
+	if self.moving_right and dx > self.patrol_distance then
+		-- Rört sig tillräckligt åt höger.
+		self.moving_right = false
+	elseif not self.moving_right and dx < -self.patrol_distance then
+		-- Rört sig tillräckligt åt vänster. Notera minustecknet framför patrol_distance
+		self.moving_right = true
+	end
+	
+	-- Förflytta sig
+	if self.moving_right then
+		move_right(self, go)
+	else
+		move_left(self, go)
+	end
+end
+
+function init(self)
+	-- Definera egna variabler för det här scriptet
+	self.moving_right = true
+	self.start_x = go.get_world_position().x
+	
+	-- Lägg grunderna för fysik modulen
+	init_physics(self)
+end
+
+function update(self, dt)
+	-- Kör vår egna funktion
+	patrol(self)
+	
+	-- Uppdatera animationer
+	update_animations(self)
+	-- Uppdatera kollision
+	update_physics(self, dt)
+end
+
+function on_message(self, message_id, message, sender)
+	-- Hantera kollision meddelanden
+	handle_physics_messages(self, message_id, message, sender)
+end

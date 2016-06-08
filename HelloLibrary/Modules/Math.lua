@@ -22,6 +22,14 @@
 				math.clamp(2, 1, 3) >> 2
 				math.clamp(0, 1, 3) >> 1
 				math.clamp(4, 1, 3) >> 3
+		
+		-	vmath.clampMagnitude(vector, max):
+			+	vector: (vector3 | vector4) vector som ska hindras
+			+	max: (number) maximala magnitud/längd av vektorn
+			=	returnerar:	(vector3 | vector4) vektorn med begränsad magnitud
+			ex:
+				vmath.clampMagnitude(vmath.vector3(2, 0, 0), 1) >> vmath.vector3(1, 0, 0)
+				vmath.clampMagnitude(vmath.vector3(6, 8, 0), 5) >> vmath.vector3(3, 4, 0)
 			
 		-	math.round(value):
 			+	value: (number) värdet som kommer avrundas
@@ -42,6 +50,7 @@
 --]]--
 
 function math.moveTowards(value, target, maxDelta)
+	if maxDelta == 0 then return value end
 	local delta = target - value
 	
 	if delta < 0 then
@@ -56,6 +65,14 @@ end
 function math.clamp(value, min, max)
     if min > max then min, max = max, min end -- byt plats om perioden är inverterad
     return math.max(min, math.min(max, value))
+end
+
+function vmath.clampMagnitude(vector, max)
+	max = math.abs(max) -- se till så att max värdet är positivt
+	if vmath.length(vector) > max then
+		vector = vmath.normalize(vector) * max
+	end
+	return vector
 end
 
 function math.round(value, decimals)
