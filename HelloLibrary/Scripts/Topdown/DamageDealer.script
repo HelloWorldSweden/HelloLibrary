@@ -1,0 +1,26 @@
+
+--======================================--
+--(( ALREADY COMPLETED SCRIPT EXAMPLE ))--
+--======================================--
+
+go.property("push_force", 1400) -- kraften spelaren puttas bort med vid kollision
+go.property("damage", 1)
+
+function on_message(self, message_id, message, sender)
+	-- Kollisions meddelande
+	if message_id == hash("collision_response") then
+		-- Vilket inkluderar vår hero, dvs kolliderade med spelaren
+		if message.group == hash("hero") then
+			-- Skada via Health modulen
+			msg.post(message.other_id, "damage", { amount = self.damage })
+			-- Putta via Physics modulen
+			msg.post(message.other_id, "set_momentum", { force = calc_force(self, message.other_position) })
+		end
+	end
+end
+
+function calc_force(self, other_pos)
+	-- Räkna ut en vektor från detta objekt till spelaren
+	local delta = other_pos - go.get_world_position()
+	return vmath.normalize(delta) * self.push_force
+end

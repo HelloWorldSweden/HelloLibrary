@@ -7,7 +7,6 @@
 		-	Animation på spriten med ID "walk"
 		-	Animation på spriten med ID "stand"
 		-	Modulen "HelloLibrary.Modules.Physics"
-		-	Modulen "HelloLibrary.Modules.Movement"
 	
 	# Variabler att använda:
 		-	self.walkAnimActive: (bool, readonly) =true om "walk" animationen spelas upp av

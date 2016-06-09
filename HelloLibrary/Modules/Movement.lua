@@ -43,6 +43,8 @@
 require "HelloLibrary.Modules.Math"
 require "HelloLibrary.Modules.Health"
 
+--(( Användas för SIDESCROLLER rörelse ))--
+
 function jump(self)
 	-- Måste stå på något för att kunna hoppa
 	-- Ska inte kunna hoppa i odödlighetsstadiet
@@ -74,5 +76,43 @@ function move_left(self)
 		
 		-- Få spelaren att vända sig åt vänster
 		sprite.set_hflip("#sprite", true)
+	end
+end
+
+--(( Användas för TOP-DOWN rörelse ))--
+
+function move_north(self)
+	-- Ska inte kunna förflytta i odödlighetsstadiet
+	local mult = invis_normalized(self)
+	if mult > .4 then
+		self.momentum.y = self.move_speed * mult
+		self.isMoving = true
+	end
+end
+
+function move_east(self)
+	-- Ska inte kunna förflytta i odödlighetsstadiet
+	local mult = invis_normalized(self)
+	if mult > .4 then
+		self.momentum.x = self.move_speed * mult
+		self.isMoving = true
+	end
+end
+
+function move_south(self)
+	-- Ska inte kunna förflytta i odödlighetsstadiet
+	local mult = invis_normalized(self)
+	if mult > .4 then
+		self.momentum.y = -self.move_speed * mult
+		self.isMoving = true
+	end
+end
+
+function move_west(self)
+	-- Ska inte kunna förflytta i odödlighetsstadiet
+	local mult = invis_normalized(self)
+	if mult > .4 then
+		self.momentum.x = -self.move_speed * mult
+		self.isMoving = true
 	end
 end
