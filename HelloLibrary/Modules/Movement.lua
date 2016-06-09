@@ -4,9 +4,9 @@
 	=============
 	# Kräver:
 		-	Modulen "HelloLibrary.Modules.Physics"
-		-	Sprite komponent med ID "sprite"
+		-	Sprite komponent med ID "sprite" [Endast krav om du kommer använda "move_right" eller "move_left" funktionerna]
 		-	self.jump_force: (number) hopp kraften. [Endast krav om du kommer använda "jump" funktionen]
-		-	self.move_speed: (number) hastigheten karaktären rör sig, i enheter/s. [Endast krav om du kommer använda någon av  "move" funktionerna]
+		-	self.move_speed: (number) hastigheten karaktären rör sig, i enheter/s. [Endast krav om du kommer använda någon av  "move_*" funktionerna]
 	
 	# Funktioner att använda:
 		-	jump(self):
@@ -19,7 +19,8 @@
 					end
 				end
 				
-		-	move_right(self):
+		-	move_right(self): # Rör objektet och flippar spriten tillsammans med rörelsen
+		-	move_left(self):
 			+	self: (userdata) referens till komponenten/scriptet som kallar funktionen.
 			=	returnerar: (nil)
 			ex:
@@ -28,16 +29,20 @@
 						move_right(self)
 					end
 				end
-				
-		-	move_left(self):
+			
+		-	move_north(self): # Rör objektet men flippar inte spriten
+		-	move_east(self):
+		-	move_south(self):
+		-	move_west(self):
 			+	self: (userdata) referens till komponenten/scriptet som kallar funktionen.
 			=	returnerar: (nil)
 			ex:
 				function on_input(self, action_id, action)
-					if action_id == hash("hero_left") then
-						move_left(self)
+					if action_id == hash("hero_north") then
+						move_north(self)
 					end
 				end
+				
 --]]--
 
 require "HelloLibrary.Modules.Math"
@@ -89,6 +94,7 @@ function move_north(self)
 		self.isMoving = true
 	end
 end
+move_up = move_north
 
 function move_east(self)
 	-- Ska inte kunna förflytta i odödlighetsstadiet
@@ -107,6 +113,7 @@ function move_south(self)
 		self.isMoving = true
 	end
 end
+move_down = move_south
 
 function move_west(self)
 	-- Ska inte kunna förflytta i odödlighetsstadiet

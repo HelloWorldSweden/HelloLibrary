@@ -60,6 +60,26 @@ instances {
   }
 }
 instances {
+  id: "ghost2"
+  prototype: "/enemies/ghost.go"
+  position {
+    x: 2903.8926
+    y: 1438.5978
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
   id: "hero"
   prototype: "/hero/hero.go"
   children: "camera"
@@ -163,7 +183,37 @@ collection_instances {
 scale_along_z: 0
 embedded_instances {
   id: "hud"
-  data: "components {\n  id: \"deathGui\"\n  component: \"/HelloLibrary/Scripts/Basic HUD/Gameover.gui\"\n  position {\n    x: 0.0\n    y: 0.0\n    z: 0.0\n  }\n  rotation {\n    x: 0.0\n    y: 0.0\n    z: 0.0\n    w: 1.0\n  }\n}\ncomponents {\n  id: \"hud\"\n  component: \"/HelloLibrary/Scripts/Basic HUD/Score and Health.gui\"\n  position {\n    x: 0.0\n    y: 0.0\n    z: 0.0\n  }\n  rotation {\n    x: 0.0\n    y: 0.0\n    z: 0.0\n    w: 1.0\n  }\n}\n"
+  data: "components {\n"
+  "  id: \"deathGui\"\n"
+  "  component: \"/HelloLibrary/Scripts/Basic HUD/Gameover.gui\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "components {\n"
+  "  id: \"hud\"\n"
+  "  component: \"/HelloLibrary/Scripts/Basic HUD/Score and Health.gui\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
   position {
     x: 986.94385
     y: 380.75537

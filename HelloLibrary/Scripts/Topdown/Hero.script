@@ -49,23 +49,23 @@ end
 
 function on_input(self, action_id, action)
 	-- Om spelaren trycker på knappen för att gå norrut
-	if action_id == hash("hero_north") then
-		move_north(self, go)
+	if action_id == hash("hero_up") then
+		move_up(self, go)
 	end
 	
 	-- Om spelaren trycker på knappen för att gå österut
-	if action_id == hash("hero_east") then
-		move_east(self, go)
+	if action_id == hash("hero_down") then
+		move_down(self, go)
 	end
 	
 	-- Om spelaren trycker på knappen för att gå söderut
-	if action_id == hash("hero_south") then
-		move_south(self, go)
+	if action_id == hash("hero_left") then
+		move_left(self, go)
 	end
 	
 	-- Om spelaren trycker på knappen för att gå västerut
-	if action_id == hash("hero_west") then
-		move_west(self, go)
+	if action_id == hash("hero_right") then
+		move_right(self, go)
 	end
 	
 	-- Om spelaren trycker på Restart knappen

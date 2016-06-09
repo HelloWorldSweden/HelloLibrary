@@ -14,6 +14,14 @@ key_trigger {
   input: KEY_K
   action: "respawn"
 }
+key_trigger {
+  input: KEY_UP
+  action: "hero_up"
+}
+key_trigger {
+  input: KEY_DOWN
+  action: "hero_down"
+}
 mouse_trigger {
   input: MOUSE_BUTTON_1
   action: "mouse_press"
