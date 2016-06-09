@@ -1,6 +1,6 @@
 components {
   id: "camera"
-  component: "/hero/camera/hero.camera"
+  component: "/camera/hero.camera"
   position {
     x: 0.0
     y: 0.0
@@ -15,7 +15,7 @@ components {
 }
 components {
   id: "script"
-  component: "/hero/camera/camera.script"
+  component: "/camera/camera.script"
   position {
     x: 0.0
     y: 0.0

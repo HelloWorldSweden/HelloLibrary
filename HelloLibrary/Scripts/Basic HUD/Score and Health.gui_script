@@ -1,0 +1,43 @@
+
+--======================================--
+--(( ALREADY COMPLETED SCRIPT EXAMPLE ))--
+--======================================--
+
+function on_message(self, message_id, message, sender)
+	-- uppdatera poängen
+	if message_id == hash("update_hud_score") then
+		setScore(message.score)
+	end
+	
+	-- uppdatera livet
+	if message_id == hash("update_hud_health") then
+		setLife(message.health, message.max_health)
+		
+		if message.health <= 0 then
+			msg.post(".", "gameover")
+		end
+	end
+end
+
+function setScore(score)
+	gui.set_text(gui.get_node("coins"), score) 
+end
+
+function setLife(health, max_health)
+	-- Ändra texten
+	gui.set_text(gui.get_node("lives"), health .. " / " .. max_health)
+	
+	-- Ändra liven
+	for life = 1, max_health do
+		local node = gui.get_node("life" .. life)
+		if health >= life then
+			gui.set_color(node, vmath.vector4(1, 1, 1, 1))
+		else
+			gui.set_color(node, vmath.vector4(1, 1, 1, 0))
+		end
+	end
+end
+
+function death(self)
+	msg.post("hud", "gameover")
+end

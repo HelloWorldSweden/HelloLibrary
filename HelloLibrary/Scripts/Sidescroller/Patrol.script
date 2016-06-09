@@ -5,7 +5,7 @@ require "HelloLibrary.Modules.ALL"
 --======================================--
 
 -- Definera egenskaper synliga via "properties" fönstret
-go.property("move_speed", 500) -- horisontell rörelse i enheter/s
+go.property("move_speed", 250) -- horisontell rörelse i enheter/s
 go.property("gravity", 1000) -- Hastighet i enheter/s/s
 go.property("patrol_distance", 250) -- Patruleringsradien från startpositionen i enheter.
 
@@ -41,8 +41,6 @@ function update(self, dt)
 	-- Kör vår egna funktion
 	patrol(self)
 	
-	-- Uppdatera animationer
-	update_animations(self)
 	-- Uppdatera kollision
 	update_physics(self, dt)
 end
