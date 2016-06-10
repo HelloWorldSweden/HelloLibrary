@@ -21,6 +21,7 @@ function init(self)
 	-- Uppdatera livräknaren
 	msg.post("hud", "update_hud_health", { health = self.health, max_health = self.max_health })
 	
+	
 	-- Spelarens poäng
 	self.score = 0
 end

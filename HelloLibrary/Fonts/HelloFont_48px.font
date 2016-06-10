@@ -1,5 +1,5 @@
 font: "/HelloLibrary/Fonts/BoogalooOne-Regular.ttf"
 material: "/builtins/fonts/font.material"
-size: 15
+size: 48
 outline_alpha: 1.0
-outline_width: 1.0
+outline_width: 2.0
