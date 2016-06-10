@@ -1,6 +1,23 @@
-images {
-  image: "/oldHelloLibrary/Grafik/Pickups/coin.png"
+animations {
+  id: "coin"
+  images {
+    image: "/HelloLibrary/Grafik/Pickups/coin.png"
+  }
+  playback: PLAYBACK_ONCE_FORWARD
+  fps: 30
+  flip_horizontal: 0
+  flip_vertical: 0
 }
-images {
-  image: "/oldHelloLibrary/Grafik/Pickups/heart.png"
+animations {
+  id: "heart"
+  images {
+    image: "/HelloLibrary/Grafik/Pickups/heart.png"
+  }
+  playback: PLAYBACK_ONCE_FORWARD
+  fps: 30
+  flip_horizontal: 0
+  flip_vertical: 0
 }
+margin: 0
+extrude_borders: 0
+inner_padding: 0

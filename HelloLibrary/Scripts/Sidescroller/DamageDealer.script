@@ -12,7 +12,7 @@ function on_message(self, message_id, message, sender)
 		-- Vilket inkluderar vår hero, dvs kolliderade med spelaren
 		if message.group == hash("hero") then
 			-- Skada via Health modulen
-			msg.post(message.other_id, "damage", { amount = self.damage })
+			msg.post(message.other_id, "damage")
 			-- Putta via Physics modulen
 			msg.post(message.other_id, "set_momentum", { force = calc_force(self, message.other_position) })
 		end

@@ -20,6 +20,9 @@ function init(self)
 	msg.post(".", "acquire_input_focus")
 	-- Uppdatera livräknaren
 	msg.post("hud", "update_hud_health", { health = self.health, max_health = self.max_health })
+	
+	-- Spelarens poäng
+	self.score = 0
 end
 
 function update(self, dt)
@@ -41,6 +44,11 @@ function on_message(self, message_id, message, sender)
 	then
 		-- Uppdatera livräknaren
 		msg.post("hud", "update_hud_health", { health = self.health, max_health = self.max_health })
+	elseif message_id == hash("add_score") then
+		-- Öka poängen
+		self.score = self.score + 1
+		-- Uppdatera poängräknaren
+		msg.post("hud", "update_hud_score", { score = self.score })
 	end
 end
 

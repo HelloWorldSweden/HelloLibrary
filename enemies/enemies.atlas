@@ -1,6 +1,23 @@
-images {
-  image: "/oldHelloLibrary/Grafik/Enemies/spikes.png"
+animations {
+  id: "ghost"
+  images {
+    image: "/HelloLibrary/Grafik/Enemies/ghost.png"
+  }
+  playback: PLAYBACK_ONCE_FORWARD
+  fps: 30
+  flip_horizontal: 0
+  flip_vertical: 0
 }
-images {
-  image: "/oldHelloLibrary/Grafik/Enemies/ghost.png"
+animations {
+  id: "spikes"
+  images {
+    image: "/HelloLibrary/Grafik/Enemies/spikes.png"
+  }
+  playback: PLAYBACK_ONCE_FORWARD
+  fps: 30
+  flip_horizontal: 0
+  flip_vertical: 0
 }
+margin: 0
+extrude_borders: 0
+inner_padding: 0

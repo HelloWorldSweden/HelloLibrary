@@ -1,191 +1,197 @@
-images {
-  image: "/oldHelloLibrary/Grafik/playerIdleAnim_000.png"
-}
 animations {
   id: "walk"
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/G\303\245/Walk_000.png"
+    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_000.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/G\303\245/Walk_001.png"
+    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_001.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/G\303\245/Walk_002.png"
+    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_002.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/G\303\245/Walk_003.png"
+    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_003.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/G\303\245/Walk_004.png"
+    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_004.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/G\303\245/Walk_005.png"
+    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_005.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/G\303\245/Walk_006.png"
+    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_006.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/G\303\245/Walk_007.png"
+    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_007.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/G\303\245/Walk_008.png"
+    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_008.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/G\303\245/Walk_009.png"
+    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_009.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/G\303\245/Walk_010.png"
+    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_010.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/G\303\245/Walk_011.png"
+    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_011.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/G\303\245/Walk_012.png"
+    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_012.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/G\303\245/Walk_013.png"
+    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_013.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/G\303\245/Walk_014.png"
+    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_014.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/G\303\245/Walk_015.png"
+    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_015.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/G\303\245/Walk_016.png"
+    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_016.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/G\303\245/Walk_017.png"
+    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_017.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/G\303\245/Walk_018.png"
+    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_018.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/G\303\245/Walk_019.png"
+    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_019.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/G\303\245/Walk_020.png"
+    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_020.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/G\303\245/Walk_021.png"
+    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_021.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/G\303\245/Walk_022.png"
+    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_022.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/G\303\245/Walk_023.png"
+    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_023.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/G\303\245/Walk_024.png"
+    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_024.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/G\303\245/Walk_025.png"
+    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_025.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/G\303\245/Walk_026.png"
+    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_026.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/G\303\245/Walk_027.png"
+    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_027.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/G\303\245/Walk_028.png"
+    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_028.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/G\303\245/Walk_029.png"
+    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_029.png"
   }
   playback: PLAYBACK_LOOP_FORWARD
+  fps: 30
+  flip_horizontal: 0
+  flip_vertical: 0
 }
 animations {
   id: "stand"
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/Stilla/Stand_000.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_000.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/Stilla/Stand_001.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_001.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/Stilla/Stand_002.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_002.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/Stilla/Stand_003.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_003.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/Stilla/Stand_004.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_004.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/Stilla/Stand_005.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_005.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/Stilla/Stand_006.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_006.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/Stilla/Stand_007.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_007.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/Stilla/Stand_008.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_008.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/Stilla/Stand_009.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_009.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/Stilla/Stand_010.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_010.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/Stilla/Stand_011.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_011.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/Stilla/Stand_012.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_012.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/Stilla/Stand_013.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_013.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/Stilla/Stand_014.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_014.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/Stilla/Stand_015.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_015.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/Stilla/Stand_016.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_016.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/Stilla/Stand_017.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_017.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/Stilla/Stand_018.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_018.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/Stilla/Stand_019.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_019.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/Stilla/Stand_020.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_020.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/Stilla/Stand_021.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_021.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/Stilla/Stand_022.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_022.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/Stilla/Stand_023.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_023.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/Stilla/Stand_024.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_024.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/Stilla/Stand_025.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_025.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/Stilla/Stand_026.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_026.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/Stilla/Stand_027.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_027.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/Stilla/Stand_028.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_028.png"
   }
   images {
-    image: "/oldHelloLibrary/Grafik/Animations/Stilla/Stand_029.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_029.png"
   }
   playback: PLAYBACK_LOOP_FORWARD
+  fps: 30
+  flip_horizontal: 0
+  flip_vertical: 0
 }
+margin: 0
+extrude_borders: 0
+inner_padding: 0

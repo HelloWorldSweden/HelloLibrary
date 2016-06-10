@@ -33,12 +33,12 @@
 		-	Skada:
 			+	message_id == hash("damage")
 			+	message:
-				-	amount: (number) Hur mycket skada. Om `amount`=1 kommer self.health sjunka med 1
+				-	amount: (number, optional) Hur mycket skada. Om `amount`=2 kommer self.health sjunka med 2
 		
 		-	Öka liv:
 			+	message_id == hash("heal")
 			+	message:
-				-	amount: (number) Hur mycket livet ska öka med. Om `amount`=1 kommer self.health öka med 1
+				-	amount: (number, optional) Hur mycket livet ska öka med. Om `amount`=2 kommer self.health öka med 2
 --]]--
 
 require "HelloLibrary.Modules.Math"
@@ -53,13 +53,13 @@ end
 
 function handle_health_messages(self, message_id, message, sender)
 	if message_id == hash("damage") and not is_invis(self) then
-		self.health = math.clamp(self.health - message.amount, 0, self.max_health)
+		self.health = math.clamp(self.health - (message.amount or 1), 0, self.max_health)
 		-- Markera att odödligheten börjar nu
 		self.invis_since = os.clock()
 	end
 	
 	if message_id == hash("heal") then
-		self.health = math.clamp(self.health + message.amount, 0, self.max_health)
+		self.health = math.clamp(self.health + (message.amount or 1), 0, self.max_health)
 	end
 end
 

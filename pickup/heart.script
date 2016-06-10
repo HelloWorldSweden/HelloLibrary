@@ -1,12 +1,20 @@
+
+--======================================--
+--(( ALREADY COMPLETED SCRIPT EXAMPLE ))--
+--======================================--
+
 function init(self)
 	self.collected = false
 end
 
 function on_message(self, message_id, message, sender)
-	if self.collected == false and message_id == hash("collision_response") then
+	if not self.collected and message_id == hash("collision_response") then
 		self.collected = true
+		
+		-- Stäng av spriten, vilket kommer gömma objektet
 		msg.post("#sprite", "disable")
-		msg.post("hud#gui", "increase_heart")
+		-- Öka spelarens liv
+		msg.post(message.other_id, "heal")
 	end
 end
 	

@@ -1,3 +1,6 @@
 images {
-  image: "/oldHelloLibrary/Grafik/Enviroment/platform.png"
+  image: "/HelloLibrary/Grafik/Enviroment/platform.png"
 }
+margin: 0
+extrude_borders: 0
+inner_padding: 0

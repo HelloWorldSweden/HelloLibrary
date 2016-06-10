@@ -3,8 +3,8 @@ instances {
   id: "background"
   prototype: "/background/background.go"
   position {
-    x: 1114.6938
-    y: 504.3062
+    x: 1865.6819
+    y: 861.0255
     z: -1.0
   }
   rotation {
@@ -17,6 +17,306 @@ instances {
     x: 1.0
     y: 1.0
     z: 1.0
+  }
+}
+instances {
+  id: "coin"
+  prototype: "/pickup/coin.go"
+  position {
+    x: 194.51074
+    y: 1430.6119
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 0.5
+  }
+}
+instances {
+  id: "coin1"
+  prototype: "/pickup/coin.go"
+  position {
+    x: 292.59402
+    y: 1525.3131
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 0.5
+  }
+}
+instances {
+  id: "coin10"
+  prototype: "/pickup/coin.go"
+  position {
+    x: 3235.0925
+    y: 1136.362
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 0.5
+  }
+}
+instances {
+  id: "coin11"
+  prototype: "/pickup/coin.go"
+  position {
+    x: 3079.5122
+    y: 1139.7443
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 0.5
+  }
+}
+instances {
+  id: "coin12"
+  prototype: "/pickup/coin.go"
+  position {
+    x: 3336.558
+    y: 287.43436
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 0.5
+  }
+}
+instances {
+  id: "coin13"
+  prototype: "/pickup/coin.go"
+  position {
+    x: 3147.1558
+    y: 280.67
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 0.5
+  }
+}
+instances {
+  id: "coin14"
+  prototype: "/pickup/coin.go"
+  position {
+    x: 2893.4922
+    y: 280.67
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 0.5
+  }
+}
+instances {
+  id: "coin2"
+  prototype: "/pickup/coin.go"
+  position {
+    x: 448.1744
+    y: 1488.109
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 0.5
+  }
+}
+instances {
+  id: "coin3"
+  prototype: "/pickup/coin.go"
+  position {
+    x: 590.2261
+    y: 1576.0458
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 0.5
+  }
+}
+instances {
+  id: "coin4"
+  prototype: "/pickup/coin.go"
+  position {
+    x: 613.9013
+    y: 1420.4655
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 0.5
+  }
+}
+instances {
+  id: "coin5"
+  prototype: "/pickup/coin.go"
+  position {
+    x: 1503.4153
+    y: 760.9399
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 0.5
+  }
+}
+instances {
+  id: "coin6"
+  prototype: "/pickup/coin.go"
+  position {
+    x: 1628.556
+    y: 764.3221
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 0.5
+  }
+}
+instances {
+  id: "coin7"
+  prototype: "/pickup/coin.go"
+  position {
+    x: 3410.966
+    y: 1630.1606
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 0.5
+  }
+}
+instances {
+  id: "coin8"
+  prototype: "/pickup/coin.go"
+  position {
+    x: 3417.7305
+    y: 1498.2556
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 0.5
+  }
+}
+instances {
+  id: "coin9"
+  prototype: "/pickup/coin.go"
+  position {
+    x: 3576.6929
+    y: 1613.2498
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 0.5
   }
 }
 instances {
@@ -77,6 +377,66 @@ instances {
     x: 1.0
     y: 1.0
     z: 1.0
+  }
+}
+instances {
+  id: "heart"
+  prototype: "/pickup/heart.go"
+  position {
+    x: 2044.5645
+    y: 1532.0774
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 0.5
+  }
+}
+instances {
+  id: "heart1"
+  prototype: "/pickup/heart.go"
+  position {
+    x: 2835.995
+    y: 514.0406
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 0.5
+  }
+}
+instances {
+  id: "heart2"
+  prototype: "/pickup/heart.go"
+  position {
+    x: 1395.1854
+    y: 263.7591
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 0.5
   }
 }
 instances {
