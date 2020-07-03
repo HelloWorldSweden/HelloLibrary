@@ -53,7 +53,7 @@ Här följer en snabb introduktion till vilka speltyper som Hello Library stöde
 
 **Sidescroller**
 
-*Sidescrollern*​ är ett klassiskt 2D-spel med en vy ifrån sidan av en värld. Vanligtvis rör sig karaktären från vänster till höger med något mål – samla poäng genom att plocka upp saker eller kanske bara överleva så länge som möjligt. Detta spel finns i två varianter: den där spelaren aktivt måste be karaktären att röra sig framåt genom input och den där karaktären automatiskt rör sig åt framåt. Ett exempel på det förstnämnda, som vi här kallar ​*klassisk sidescroller*​, är Super Mario och ett exempel på det andra är Robot Unicorn Attack, en så kallad ​*autorunner.*​ Koden är väldigt lik, men med någon liten skillnad.
+*Sidescrollern*​ är ett klassiskt 2D-spel med en vy ifrån sidan av en värld. Vanligtvis rör sig karaktären från vänster till höger med något mål – samla poäng genom att plocka upp saker eller kanske bara överleva så länge som möjligt. Detta spel finns i två varianter: den där spelaren aktivt måste be karaktären att röra sig framåt genom input och den där karaktären automatiskt rör sig åt framåt. Ett exempel på det förstnämnda, som vi här kallar ​*klassisk sidescroller*​, är Super Mario och ett exempel på det andra är Robot Unicorn Attack, en så kallad ​*autorunner*.​ Koden är väldigt lik, men med någon liten skillnad.
 
 **Klassisk Sidescroller**
 
@@ -92,7 +92,13 @@ Till de olika spelobjekten, använd de här skripten:
 
 Alla 2D-spelen som Hello Library stöder har en huvudkaraktär som styrs av spelaren. Mycket av spelets funktion hör till spelobjektet för denna huvudkaraktär, som vi brukar kalla “hero”. I hero-skriptet kopplas alla dessa funktioner ihop och vi får användning av många av modulerna.
 
-I Hello Library finns två varianter på hero-skripts; en för sidescrollern och en för top-down. De ligger i (HelloLibrary→Scripts→Sidescroller) ​Hero.script och i (HelloLibrary→Scripts→Topdown) ​Hero.script​.
+I Hello Library finns två varianter på hero-skripts; en för sidescrollern och en för top-down. De ligger i 
+
+>HelloLibrary→Scripts→Sidescroller -> `​Hero.script`
+
+och i 
+
+>HelloLibrary→Scripts→Topdown ->`​Hero.script​`
 
 **Skadehantering**
 
