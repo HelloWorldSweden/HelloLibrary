@@ -1,6 +1,6 @@
 # En guide till Hello Library
-
 ## Ett paket med kom igång-kod till ditt egna 2D-spel i Defold!
+![Exempel spel byggd med Hello Library](screenshot_hellolibrary.png)
 
 ### Detta dokuments uppbyggnad
 
@@ -28,16 +28,16 @@
 *Vad för spel kan jag göra med hjälp av Hello Library?*
 
 > Koden i Hello Library är framtagen för 2D-spel i Defold av typen
-
-**Sidescroller**
-
-- **Klassisk.** Ex: ​*Super Mario*
-
-- **Autorunner.** Ex:​ *Robot Unicorn Attack* 
-
-**Top-Down**
-
--  Ex: ​*The*​ ​*Legend of Zelda*
+>
+>**Sidescroller**
+>
+>- **Klassisk.** Ex: ​*Super Mario*
+>
+>- **Autorunner.** Ex:​ *Robot Unicorn Attack* 
+>
+>**Top-Down**
+>
+>-  Ex: ​*The*​ ​*Legend of Zelda*
 
 
 
@@ -61,10 +61,9 @@ Skripten som är specifika för den klassiska sidescrollern ligger i mappen:
 > `HelloLibrary/Scripts/Sidescroller` 
 
 Till de olika spelobjekten, använd de här skripten: 
-> `~Hero​:\ ​Hero.script~`
+- Hero:​ `​Hero.script`
 
-Fiender​: 
-> `​DamageDealer.script`
+- Fiender​: `​DamageDealer.script`
 
 
 **Sidescroller Autorunner**
