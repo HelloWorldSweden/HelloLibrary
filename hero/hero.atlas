@@ -1,94 +1,124 @@
 animations {
   id: "walk"
   images {
-    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_000.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_000.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_001.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_001.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_002.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_002.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_003.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_003.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_004.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_004.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_005.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_005.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_006.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_006.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_007.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_007.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_008.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_008.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_009.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_009.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_010.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_010.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_011.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_011.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_012.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_012.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_013.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_013.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_014.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_014.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_015.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_015.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_016.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_016.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_017.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_017.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_018.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_018.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_019.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_019.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_020.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_020.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_021.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_021.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_022.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_022.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_023.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_023.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_024.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_024.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_025.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_025.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_026.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_026.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_027.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_027.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_028.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_028.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/HelloLibrary/Grafik/Animations/G\303\245/Walk_029.png"
+    image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_029.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   playback: PLAYBACK_LOOP_FORWARD
   fps: 30
@@ -99,93 +129,123 @@ animations {
   id: "stand"
   images {
     image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_000.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
     image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_001.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
     image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_002.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
     image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_003.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
     image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_004.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
     image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_005.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
     image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_006.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
     image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_007.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
     image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_008.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
     image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_009.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
     image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_010.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
     image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_011.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
     image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_012.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
     image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_013.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
     image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_014.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
     image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_015.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
     image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_016.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
     image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_017.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
     image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_018.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
     image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_019.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
     image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_020.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
     image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_021.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
     image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_022.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
     image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_023.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
     image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_024.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
     image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_025.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
     image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_026.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
     image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_027.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
     image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_028.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
     image: "/HelloLibrary/Grafik/Animations/Stilla/Stand_029.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   playback: PLAYBACK_LOOP_FORWARD
   fps: 30
