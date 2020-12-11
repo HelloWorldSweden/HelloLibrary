@@ -2,6 +2,9 @@
 ## Ett paket med kom igång-kod till ditt egna 2D-spel i Defold!
 ![Exempel spel byggd med Hello Library](screenshot_hellolibrary.png)
 
+(Tutorials)
+https://www.youtube.com/playlist?list=PLs8u0fp9sIiY4BsrIjTjXrFBgmRUZ2SFV
+
 ### Detta dokuments uppbyggnad
 
 1. Introduktion till Hello Library (FAQ)
